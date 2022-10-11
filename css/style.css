@@ -706,12 +706,7 @@ margin-bottom: 50px;
 
 }
 
-.button-item:hover,
-.button-item:focus {
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
 
-}
 
 .button-link{
     
@@ -733,7 +728,8 @@ margin-bottom: 50px;
 }
 .button-link:hover,
 .button-link:focus {
-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2),
+    0 4px 6px rgba(0, 0, 0, 0.2);
  color: var(--background-clip);
  background-color: var(--background-button);
 
@@ -759,14 +755,14 @@ transform: translateY(0);
 .foto-link:focus .foto-open {
     transform: translateY(0);
 }
-
-
+.foto-link {
+    display: block;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .foto-link:hover,
 .foto-link:focus {
-display: block;
-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-transform: translateY(0);
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2),0 4px 6px rgba(0, 0, 0, 0.2);
+
 }
 .foto-open-block {
 position: relative;
